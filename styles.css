@@ -1,0 +1,279 @@
+/*Font face declarations*/
+@font-face {
+	font-family: 'Lato';
+	src: url('../_fonts/Lato-Reg-webfont.eot');
+    src: url('../_fonts/Lato-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Lato-Reg-webfont.woff') format('woff'),
+         url('../_fonts/Lato-Reg-webfont.ttf') format('truetype'),
+         url('../_fonts/Lato-Reg-webfont.svg#LatoRegular') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../_fonts/Lato-RegIta-webfont.eot');
+    src: url('../_fonts/Lato-RegIta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Lato-RegIta-webfont.woff') format('woff'),
+         url('../_fonts/Lato-RegIta-webfont.ttf') format('truetype'),
+         url('../_fonts/Lato-RegIta-webfont.svg#LatoItalic') format('svg');
+	font-weight: normal;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../_fonts/Lato-Bol-webfont.eot');
+    src: url('../_fonts/Lato-Bol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Lato-Bol-webfont.woff') format('woff'),
+         url('../_fonts/Lato-Bol-webfont.ttf') format('truetype'),
+         url('../_fonts/Lato-Bol-webfont.svg#LatoBold') format('svg');
+	font-weight: bold;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../_fonts/Lato-BolIta-webfont.eot');
+    src: url('../_fonts/Lato-BolIta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Lato-BolIta-webfont.woff') format('woff'),
+         url('../_fonts/Lato-BolIta-webfont.ttf') format('truetype'),
+         url('../_fonts/Lato-BolIta-webfont.svg#LatoBoldItalic') format('svg');
+	font-weight: bold;
+	font-style:italic;
+}
+@font-face {
+	font-family: 'LatoLight';
+	 src: url('../_fonts/Lato-Lig-webfont.eot');
+    src: url('../_fonts/Lato-Lig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Lato-Lig-webfont.woff') format('woff'),
+         url('../_fonts/Lato-Lig-webfont.ttf') format('truetype'),
+         url('../_fonts/Lato-Lig-webfont.svg#LatoLight') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+@font-face {
+    font-family: 'LatoBlack';
+    src: url('../_fonts/Lato-Bla-webfont.eot');
+    src: url('../_fonts/Lato-Bla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Lato-Bla-webfont.woff') format('woff'),
+         url('../_fonts/Lato-Bla-webfont.ttf') format('truetype'),
+         url('../_fonts/Lato-Bla-webfont.svg#LatoBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, 
+body {
+	margin: 0;
+}
+
+html {
+	background: #055289;
+}
+
+body {
+	font: 100% Lato, Helvetica, sans-serif;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	line-height: 1.6;
+}
+
+article, aside, section, nav, figure, header, footer {
+	display: block;
+}
+
+header h1,
+header p {
+	text-align: center;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+	font-family: LatoLight, Helvetica, sans-serif;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+	color: #e2e20d;
+	margin: 0;
+	line-height: 1;
+}
+
+h1 {
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+
+h4 {
+	font: 1.2em Lato, Helvetica, sans-serif;
+	color: black;
+}
+
+p
+ {
+	margin: 0 0 1em;
+}
+
+a {
+	color: #77A0B8;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+code {
+	color: red;
+}
+
+li {
+	list-style: none;
+}
+
+#description {
+	margin-top: 1em;
+}
+
+#survey-form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-group {
+	background: rgba(237, 237, 135, 0.5);
+	border-radius: 2px;
+	padding: 1em;
+	margin: 2em;
+	flex: 1 0 300px;
+	
+}
+
+#wrapper > li {
+	display: flex;
+	flex-wrap: wrap;
+	margin: .4em .4em;
+}
+
+
+#wrapper input[type="text"],
+#wrapper input[type="tel"],
+#wrapper input[type="url"],
+#wrapper input[type="email"],
+#wrapper input[type="number"],
+#wrapper select {
+	box-sizing: border-box;	
+	padding: 0.6em 0.8em;
+	color: #281400;
+	overflow: hidden;
+	border: 1px solid #1e1e1e;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: .9em;
+	line-height: normal;
+	max-height: 3em;
+}
+
+#wrapper input[type="text"]:focus,
+#wrapper input[type="tel"]:focus,
+#wrapper input[type="url"]:focus,
+#wrapper input[type="email"]:focus,
+#wrapper input[type="number"]:focus,
+#wrapper select:focus {
+	color: #333;
+	border: 1px solid #c17ccf;
+	outline: none;
+	background: #f2f2f2;
+}
+
+#wrapper input[type="text"],
+#wrapper input[type="tel"],
+#wrapper input[type="url"],
+#wrapper input[type="email"],
+#wrapper input[type="number"],
+#wrapper select {
+	flex: 2 0 220px;
+}
+
+@media (min-width: 589px) {
+	ul#wrapper,
+	ul#wrapper-skills {
+		margin-right: 25px;
+	}
+}
+
+#wrapper > li > label {
+	flex: 1 0 90px;
+}
+
+.wrapper-skills {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper-skills > li {
+	width: 145px;
+}
+
+#feedback {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feedback-items {
+	flex: 1 0 50px;
+}
+
+@media (max-width: 570px) {
+	.feedback-items {
+		flex: 1 0 200px;
+	}
+}
+
+.text-area {
+	display: block;
+	box-sizing: border-box;
+	width: 90%;
+	font: 0.9em Lato, Helvetica, sans-serif;
+	height: 6em;
+	overflow: auto;
+	padding: 0.6em 0.8em;
+	color: #999;
+	background: #f7f7f7;
+	border: 1px solid #e1e1e1;
+	line-height: normal;
+}
+
+.form-submit {
+	flex: 1 0 1000px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.btn-submit {
+	padding: 1em 4em;
+	border-radius: 2px;
+	background: #d6c317;
+	border: none;
+	cursor: pointer;
+	line-height: normal;
+	text-transform: uppercase;
+	font: 1.2em Lato, Helvetica, sans-serif;
+	transition: 1s ease-in-out;
+}
+
+.btn-submit:hover {
+	background: #f2e782;
+	transform: scale(1.2);
+}
+

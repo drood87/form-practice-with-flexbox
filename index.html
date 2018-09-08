@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+	<header>
+		<h1 id="title">Survey Form</h1>
+		<p id="description">An exercise for responsive Form Design with Flexbox</p>
+	</header>
+
+	<form action="GET" id="survey-form">
+		<section class="form-group">
+			<h3 class="personals">Personal Info</h3>
+			<ul id="wrapper">
+	
+				<li>
+					<label for="name" id="name-label">Name</label>
+					<input type="text" id="name" class="text-input" placeholder="Enter your name" required>
+				</li>
+	
+				<li>
+					<label for="email" id="email-label">Email</label>
+					<input type="email" id="email" class="text-input" placeholder="Enter Email Address" required>
+				</li>
+
+				<li>
+					<label for="number" id="number-label">Month Experience</label>
+					<input type="number" id="number" class="text-input" min="0" max="120" placeholder="1">
+				</li>
+				
+				<li>
+					<label for="dropwdown" id="dropdown-label">Current Status</label>
+					<select name="role" id="dropdown" class="select-menu" placeholder="Select your Role">
+						<option disabled="" value="">Select your current Status</option>
+						<option value="student">Student</option>
+						<option value="fulltime">Fulltime Job</option>
+						<option value="fulltime-learn">Fulltime Learner</option>
+						<option value="casual">Casual</option>
+						<option value="unemployed">Unemployed</option>
+						<option value="other">Other</option>
+					</select>
+				</li>
+			</ul>
+		</section>
+
+		<section class="form-group">
+			<h3>Skills & Feedback</h3>
+			<h4>Tell us what previous knowledge you have</h4>
+			<ul class="wrapper-skills">
+				
+				<li>
+					<input type="checkbox" name="skills" id="html" value="html">
+					<label for="html">HTML</label>
+				</li>				
+
+				<li>
+					<input type="checkbox" name="skills" id="js" value="js">
+					<label for="js">Javascript</label>
+				</li>
+
+
+				<li>
+					<input type="checkbox" name="skills" id="css" value="css">
+					<label for="css">CSS</label>
+				</li>
+
+				<li>
+					<input type="checkbox" name="skills" id="react" value="react">
+					<label for="react">React</label>
+				</li>
+
+				<li>
+					<input type="checkbox" name="skills" id="sass" value="sass">
+					<label for="sass">SASS</label>
+				</li>
+
+				<li>
+					<input type="checkbox" name="skills" id="bootstrap" value="bootstrap">
+					<label for="bootstrap">Bootstrap</label>
+				</li>
+
+				<li>
+					<input type="checkbox" name="skills" id="other" value="other">
+					<label for="other">Other</label>
+				</li>
+
+			</ul>
+
+			<div id="feedback">
+				
+				<ul class="feedback-items">
+					<h4>Most interested in</h4>
+					<li>
+						<input type="radio" name="interested" id="frontend" value="frontend">
+						<label for="frontend">Frontend</label>
+					</li>
+				
+					<li>
+						<input type="radio" name="interested" id="backend" value="backend">
+						<label for="backend">Backend</label>
+					</li>
+				
+					<li>
+						<input type="radio" name="interested" id="fullstack" value="fullstack">
+						<label for="fullstack">Fullstack</label>
+					</li>
+				
+				</ul>
+				
+				<ul class="feedback-items">
+					<h4>Additional Comments</h4>
+					<li>
+						<label for="additional-comments"></label>
+						<textarea name="" id="additional-comments" class="text-area" placeholder="please tell us more :)"></textarea>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<section class="form-submit">
+			<h4>All done?</h4>
+			<p>We'd love to hear your feedback! :)</p>
+			<button type="submit" id="submit" class="btn-submit">Submit</button>
+		</section>
+	</form>
+</body>
+</html>
+

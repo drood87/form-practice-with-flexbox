@@ -167,6 +167,22 @@ li {
 	
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 572px) {
+/* Styles */
+
+	.form-group {
+		padding: 0;
+		margin: 0;
+		flex: 1 0 150px;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+	}
+}
+
 #wrapper > li {
 	display: flex;
 	flex-wrap: wrap;

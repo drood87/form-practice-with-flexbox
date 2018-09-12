@@ -269,6 +269,10 @@ li {
 		padding: 0 0 2em;
 	}
 
+	.form-submit {
+		margin: 0 0 0 2em;
+	}
+
 	.form-group {
 		margin: 0 0 2em 0;
 	}

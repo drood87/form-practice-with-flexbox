@@ -154,8 +154,7 @@ li {
 	border-radius: 2px;
 	padding: 1em;
 	margin: 2em;
-	flex: 1 0 300px;
-	
+	flex: 1 0 300px;	
 }
 
 #wrapper > li {
@@ -266,11 +265,12 @@ li {
 	body {
 		width: 100%;
 		margin: 0;
-		padding: 0 0 2em;
+		padding: 0 0 2em 0;
 	}
 
 	.form-submit {
 		margin: 0 0 0 2em;
+		flex: 0 0 80%;
 	}
 
 	.form-group {
